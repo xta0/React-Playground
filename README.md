@@ -5,55 +5,52 @@ React workflow with webpack
 ## Enviroment Setup
 
 - Dependencies
-    - react
-    - react-dom
+  - react
+  - react-dom
 - Dev Dependencies
-    - babel-core 
-    - babel-loader
-    - babel-preset-env 
-    - babel-preset-react 
-    - html-webpack-plugin
-    - webpack
-    - webpack-cli 
-    - webpack-dev-server 
+
+  - babel-core
+  - babel-loader
+  - babel-preset-env
+  - babel-preset-react
+  - html-webpack-plugin
+  - webpack
+  - webpack-cli
+  - webpack-dev-server
 
 - ESlint
-    - `eslint init`
-        - airbnb style
-    - config `.eslintrc.js`
 
-    ```javascript
-    module.exports = {
-        "env": {
-            "browser": true,
-            "node": true
-        },
-        "extends": "airbnb",
-        "plugins":[
-            "react",
-            "jsx-a11y",
-            "import"
-        ],
-        "rules":{
-            "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
-        }
-    };
-    ```
-- Webpack 
-    - config modules
-        - babel
-    - config plugins
-        - HtmlWebpackPlugin
+  - `eslint init`
+    - airbnb style
+  - config `.eslintrc.js`
+
+  ```javascript
+  module.exports = {
+    env: {
+      browser: true,
+      node: true
+    },
+    extends: "airbnb",
+    plugins: ["react", "jsx-a11y", "import"],
+    rules: {
+      "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }]
+    }
+  };
+  ```
+
+- Webpack
+
+  - modules
+    - babel
+  - plugins
+    - HtmlWebpackPlugin
 
 - NPM scripts
-    - start
-    - build
-    - lint  
+  - start
+  - build
+  - lint
 
-
-### License
-
-MIT License
+## MIT License
 
 Copyright (c) 2018 Tao Xu
 
