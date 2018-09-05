@@ -1,55 +1,6 @@
-# React-Starter
+# React Redux Demo
 
-React workflow with webpack
-
-## Enviroment Setup
-
-- Dependencies
-    - react
-    - react-dom
-- Dev Dependencies
-    - babel-core 
-    - babel-loader
-    - babel-preset-env 
-    - babel-preset-react 
-    - html-webpack-plugin
-    - webpack
-    - webpack-cli 
-    - webpack-dev-server 
-
-- ESlint
-    - `eslint init`
-        - airbnb style
-    - config `.eslintrc.js`
-
-    ```javascript
-    module.exports = {
-        "env": {
-            "browser": true,
-            "node": true
-        },
-        "extends": "airbnb",
-        "plugins":[
-            "react",
-            "jsx-a11y",
-            "import"
-        ],
-        "rules":{
-            "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
-        }
-    };
-    ```
-- Webpack 
-    - config modules
-        - babel
-    - config plugins
-        - HtmlWebpackPlugin
-
-- NPM scripts
-    - start
-    - build
-    - lint  
-
+This project demostrates how to use React and Redux to build a Youtube search application
 
 ### License
 
