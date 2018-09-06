@@ -23,8 +23,8 @@
     "lodash": "^4.17.10",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "redux": "^4.0.0",
-    "youtube-api-search": "0.0.5"
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
