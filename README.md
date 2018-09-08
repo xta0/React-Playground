@@ -1,54 +1,23 @@
 # React-Starter
 
-React workflow with webpack
+A single page blog application in React & Redux
 
-## Enviroment Setup
 
-- Dependencies
-  - react
-  - react-dom
-- Dev Dependencies
+### Running
 
-  - babel-core
-  - babel-loader
-  - babel-preset-env
-  - babel-preset-react
-  - html-webpack-plugin
-  - webpack
-  - webpack-cli
-  - webpack-dev-server
+- Requirements
+  - Node.js 6+
 
-- ESlint
+- Install Dependencies
 
-  - `eslint init`
-    - airbnb style
-  - config `.eslintrc.js`
-
-  ```javascript
-  module.exports = {
-    env: {
-      browser: true,
-      node: true
-    },
-    extends: "airbnb",
-    plugins: ["react", "jsx-a11y", "import"],
-    rules: {
-      "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }]
-    }
-  };
+  ```
+  npm install
   ```
 
-- Webpack
-
-  - modules
-    - babel
-  - plugins
-    - HtmlWebpackPlugin
-
-- NPM scripts
-  - start
-  - build
-  - lint
+- Node commands
+  - `npm run start`, start hot-loading dev server using webpack-dev-server
+  - `npm run build`, bundle all files into dist foler
+  - `npm run lint`, run eslint on your javascript files
 
 ## MIT License
 
