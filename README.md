@@ -1,22 +1,54 @@
 # React-Starter
 
-This is a boilerplate project using the React & Redux
+React workflow with webpack
 
-### Running
+## Enviroment Setup
 
-- Requirements
-  - Node.js 6+
+- Dependencies
+  - react
+  - react-dom
+- Dev Dependencies
 
-- Install Dependencies
+  - babel-core
+  - babel-loader
+  - babel-preset-env
+  - babel-preset-react
+  - html-webpack-plugin
+  - webpack
+  - webpack-cli
+  - webpack-dev-server
 
+- ESlint
+
+  - `eslint init`
+    - airbnb style
+  - config `.eslintrc.js`
+
+  ```javascript
+  module.exports = {
+    env: {
+      browser: true,
+      node: true
+    },
+    extends: "airbnb",
+    plugins: ["react", "jsx-a11y", "import"],
+    rules: {
+      "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }]
+    }
+  };
   ```
-  npm install
-  ```
 
-- Node commands
-  - `npm run start`, start hot-loading dev server using webpack-dev-server
-  - `npm run build`, bundle all files into dist foler
-  - `npm run lint`, run eslint on your javascript files
+- Webpack
+
+  - modules
+    - babel
+  - plugins
+    - HtmlWebpackPlugin
+
+- NPM scripts
+  - start
+  - build
+  - lint
 
 ## MIT License
 
