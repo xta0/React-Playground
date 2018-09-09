@@ -1,11 +1,21 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebPack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+
+const settings = {
+  distPath: path.join(__dirname, 'dist'),
+  srcPath: path.join(__dirname, 'src'),
+};
+
+function appendSrcPath(subpath) {
+  return path.join(settings.srcPath, subpath);
+}
 
 module.exports = {
-  entry: './src/index.js',
+  entry: appendSrcPath('index.js'),
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: settings.distPath,
     filename: 'bundle.js',
     publicPath: '/',
   },
@@ -31,9 +41,23 @@ module.exports = {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.(jpe?g|png|gif|svg|ico)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'assets/',
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
+    new CleanWebpackPlugin([settings.distPath], {
+      verbose: true,
+    }),
     new HtmlWebpackPlugin({
       template: './index.html',
     }),

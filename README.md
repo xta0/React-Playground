@@ -1,6 +1,6 @@
 # React-Starter
 
-This is a boilerplate project using the React & Redux
+Starter pack for  React 16 & Redux & Webpack4
 
 ### Running
 
