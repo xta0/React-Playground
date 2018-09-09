@@ -1,10 +1,15 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { createPost } from '../actions';
 
 class PostsNew extends React.Component {
   onSubmit(values) {
-    console.log(values);
+    const { post, history } = this.props;
+    post(values, () => {
+      history.push('/');
+    });
   }
 
   renderTextField(field) {
@@ -67,4 +72,9 @@ function validate(values) {
 export default reduxForm({
   validate,
   form: 'PostsNewForm',
-})(PostsNew);
+})(
+  connect(
+    null,
+    { post: createPost },
+  )(PostsNew),
+);

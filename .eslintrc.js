@@ -9,6 +9,7 @@ module.exports = {
     "no-console": 0,
     "class-methods-use-this": 0,
     "react/prop-types": 0,
-    "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }]
+    "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
+    "react/jsx-one-expression-per-line": 0
   }
 };

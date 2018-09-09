@@ -14,8 +14,7 @@ class PostIndex extends React.Component {
     const { posts } = this.props;
     return _.map(posts, post => (
       <li key={post.id} className="list-group-item">
-        {post.title}
-        {post.content}
+        <Link to={`/posts/${post.id}`}>{post.title}</Link>
       </li>
     ));
   }

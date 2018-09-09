@@ -2,6 +2,17 @@
 
 A single page blog application in React & Redux
 
+### Components
+
+- React 
+  - react-dom
+  - react-redux
+- Redux
+  - redux-promise
+  - redux-form
+- React Router
+  - react-router-dom
+
 ## Running
 
 - Requirements
