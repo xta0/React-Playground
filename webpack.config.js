@@ -40,8 +40,6 @@ module.exports = {
     new WebPack.HotModuleReplacementPlugin(),
   ],
   devServer: {
-    contentBase: './dist',
-    port: 8080,
     historyApiFallback: true,
   },
 };
