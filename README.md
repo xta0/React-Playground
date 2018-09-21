@@ -1,41 +1,20 @@
-# React-Starter
+## Contact Manager
 
-Starter pack for  React 16 & Redux & Webpack4
+Contact Manager is a single page React application for demonstrating how to use React Context APIs.
 
-### Running
+### Features
 
-- Requirements
-  - Node.js 6+
+- React Context API for state handling
+- axios for HTTP request
+- Bootstrap for components' style
 
-- Install Dependencies
+### Data source
 
-  ```
-  npm install
-  ```
+All the mock data comes from [jsonplaceholder.com](https://jsonplaceholder.typicode.com/)  which provides a RESTFUL API service based on [json-serve](https://github.com/typicode/json-server). Since there is no database behind the service, every `POST/PUT/DELETE` request will not be able to change the original mock data.
 
-- Node commands
-  - `npm run start`, start hot-loading dev server using webpack-dev-server
-  - `npm run build`, bundle all files into dist foler
-  - `npm run lint`, run eslint on your javascript files
+### Deployment
+
+The applicaiton is deployed on [Github Pages]( https://xta0.github.io/React-Playground/).
+
 
 ## MIT License
-
-Copyright (c) 2018 Tao Xu
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.

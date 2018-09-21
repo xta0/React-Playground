@@ -1,60 +1,24 @@
 {
-  "name": "react-starter",
-  "version": "1.0.0",
-  "description": "Boilerplate for React apps",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint src",
-    "dev": "webpack-dev-server --config webpack.dev.config.js --hot --watch --open",
-    "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --config webpack.config.js"    
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xta0/React-Starter.git"
-  },
-  "author": "Tao Xu",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/xta0/React-Starter/issues"
-  },
-  "homepage": "https://github.com/xta0/React-Starter#readme",
+  "name": "contactmanager",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://xta0.github.io/React-Playground/",
   "dependencies": {
     "axios": "^0.18.0",
-    "bootstrap": "^4.1.3",
+    "bootstrap": "^4.1.2",
     "classnames": "^2.2.6",
-    "lodash": "^4.17.10",
-    "prop-types": "^15.6.2",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-redux": "^5.0.7",
+    "gh-pages": "^2.0.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",
-    "redux": "^4.0.0",
-    "redux-promise": "^0.6.0"
+    "react-scripts": "1.1.4",
+    "uuid": "^3.3.2"
   },
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "clean-webpack-plugin": "^0.1.19",
-    "css-loader": "^1.0.0",
-    "eslint": "^5.5.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-loader": "^2.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "^7.11.1",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.4.2",
-    "style-loader": "^0.23.0",
-    "uglifyjs-webpack-plugin": "^1.3.0",
-    "webpack": "^4.17.2",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.7"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && gh-pages -d build"
   }
 }
