@@ -7,7 +7,7 @@
     "lint": "eslint src",
     "dev": "webpack-dev-server --config webpack.dev.config.js --hot --watch --open",
     "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --config webpack.config.js"    
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
